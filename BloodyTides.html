@@ -1,0 +1,225 @@
+<div class='sheet-PC_Information'>
+        <label class='sheet-inline'>Charcater Name:</label> <input type='text' name='attr_CharName'/>
+        <label class='sheet-inline'>XP:</label><input type='number' name='attr_XP'/>
+        <label class='sheet-inline'>Wealth Level:</label><input type='number' name='attr_Wealth'/><br/>
+
+        <label class='sheet-inline'>Background:</label> 
+        <select name='attr_Background'>
+        <option> </option>
+        <option>Painter</option>
+        <option>Athlete</option>
+        <option>Laborer</option>
+        <option>Magical Adept</option>
+        <option>Merchant</option>
+        <option>Priest</option>
+        <option>Bandit</option>
+        <option>Diplomat</option>
+        <option>Pilot</option>
+        <option>Performer</option>
+        <option>Witch Hunter</option>
+        <option>Sergeant At Arms</option>
+        <option>Doctor</option>
+        <option>Veteran Soldier</option>
+        <option>Scholar</option>
+        <option>Student</option>
+        <option>Factory Worker</option>
+        <option>Adventurer</option>
+        <option>Nobility</option>
+    </select>
+        <select name='attr_Background2'>
+        <option> </option>
+        <option>Painter</option>
+        <option>Athlete</option>
+        <option>Laborer</option>
+        <option>Magical Adept</option>
+        <option>Merchant</option>
+        <option>Priest</option>
+        <option>Bandit</option>
+        <option>Diplomat</option>
+        <option>Pilot</option>
+        <option>Performer</option>
+        <option>Witch Hunter</option>
+        <option>Sergeant At Arms</option>
+        <option>Doctor</option>
+        <option>Veteran Soldier</option>
+        <option>Scholar</option>
+        <option>Student</option>
+        <option>Factory Worker</option>
+        <option>Adventurer</option>
+        <option>Nobility</option>
+    </select> <br/>
+        
+    <textarea type='text' name='attr_BackgroundNotes'/> TEMPORARY - Use this for your background abilies information </textarea>
+</div>
+<hr />
+<div class="sheet-2colrow">
+    <div class="sheet-col">
+        <div class="sheet-2colrow">
+            <div class="sheet-col">
+                <label>Strength:</label>
+                <label>Dexterity:</label>
+                <label>Logic:</label>
+                <label>Will:</label>
+            </div>
+            <div class="sheet-col">
+                <input class='sheet-inline' type='number' name='attr_Strength'/> <br/>
+                <input type='number' name='attr_Dexterity'/> <br/>
+                <input type='number' name='attr_Logic'/> <br/>
+                <input type='number' name='attr_Will'/>
+            </div>
+        </div>
+	</div>
+	
+	<div class="sheet-col">
+        <div class="sheet-2colrow">
+            <div class="sheet-col">
+		        <label>HP:</label>
+                <label>Fate Points:</label>
+                <label>Stamina:</label> 
+                <label>Exhaustion:</label>
+            </div>
+            <div class="sheet-col">
+                <input type='number' name='attr_HP'/> / <input type='number' name='attr_HP_max'/> <br/>
+                 <input type='number' name='attr_Fate'/> / <input type='number' name='attr_Fate_max'/><br/>
+                 <input type='number' name='attr_Stamina'/> / <input type='number' name='attr_Stamina_max'/><br/>
+                 <input type='number' name='attr_Exhaustion'/> <br/>
+            </div>
+        </div>
+	</div>
+</div>
+<hr />
+<h1>Fighting Style</h1>
+<hr />
+<h1>Skills</h1>
+<h4>Academic Skills</h4>
+<fieldset class="repeating_skills-academic">            
+     <select name="attr_Skill-academic" class="sheet-skills">
+        <option value="theology">Theology (C1)</option>
+        <option value="history">History (C1)</option>
+        <option value="naturalscience">Natural science(C1)</option>
+        <option value="cartography">Cartography (C1)</option>
+        <option value="botany">Botany (C1)</option>
+        <option value="blackpowder">Black Powder (C2)</option>
+        <option value="strategy">Strategy (C2)</option>
+        <option value="firstaid">First Aid (C2)</option>
+        <option value="languages">Languages (C2)</option>
+        <option value="psycology">Psychology (C2)</option>
+        <option value="occult">Occult (C3)</option>
+        <option value="diagnose">Diagnose (C3)</option>
+        <option value="mechanics">Mechanics (C3)</option>
+        <option value="engineering">Engineering (C3)</option>
+        <option value="surgery">Surgery (C4)</option>
+        <option value="advancedengineering">Advanced Engineering(C4)</option>
+      </select>
+      <input type="number" name="attr_skillclass"value='1' min='1' max='4'/> 
+      <input type="number" name="attr_skillrank" value='1' min='1' max='5'/>
+      <input type="number" name="attr_skillcost" value='1' min='1'/> 
+</fieldset>
+<h4>Social Skills</h4>
+<fieldset class="repeating_skills-social">            
+     <select name="attr_Skill-social" class="sheet-skills">
+        <option value="intimidation">Intimidation(C1)</option>
+        <option value="interrogation">Interrogation (C2)</option>
+        <option value="charm">Charm (C1)</option>
+        <option value="deceit">Deceit (C2)</option>
+        <option value="command">Command* (C2)</option>
+        <option value="deduction">Deduction (C2)</option>
+        <option value="gambling">Gambling (C2)</option>
+      </select>
+      <input type="number" name="attr_skillclass"value='1' min='1' max='4'/> 
+      <input type="number" name="attr_skillrank" value='1' min='1' max='5'/>
+      <input type="number" name="attr_skillcost" value='1' min='1'/> 
+</fieldset>
+<h4>Trade Skills</h4>
+<fieldset class="repeating_skills-trade">            
+     <select name="attr_Skill-trade" class="sheet-skills">
+        <option value="construction">Construction (C2)</option>
+        <option value="weaponcraft">Weapon Craftsmanship (C3)</option>
+        <option value="siegcraft">Siegecraft (C3)</option>
+        <option value="gunsmith">Gunsmith (C4)</option>
+        <option value="entertainment">Entertainment (C1)</option>
+        <option value="advengineering">Advanced Engineering (Steam/Electricity) (C3)</option>
+        <option value="animalhandling">Animal Handling (C2)</option>
+        <option value="armorcraft">Armor Craftsmanship (C3)</option>
+        <option value="cooking">Cooking (C1)</option>
+        <option value="farming">Farming (C1)</option>
+        <option value="counseling">Counseling (C2)</option>
+        <option value="alcholdistillery">Alcohol Distillery (C3)</option>
+        <option value="investigation">Investigation (C2)</option>
+      </select>
+      <input type="number" name="attr_skillclass"value='1' min='1' max='4'/> 
+      <input type="number" name="attr_skillrank" value='1' min='1' max='5'/>
+      <input type="number" name="attr_skillcost" value='1' min='1'/> 
+</fieldset>
+<h4>Pilot Skills</h4>
+<fieldset class="repeating_skills-pilot">            
+     <select name="attr_Skill-pilot" class="sheet-skills">
+        <option value="carriages">Carriages (Horsedrawn, Steam Powered) (C2)</option>
+        <option value="navalvessels">Naval Vessels (C2)</option>
+        <option value="riding">Riding (C2)</option>
+        <option value="airships">Airships (C3)</option>
+      </select>
+      <input type="number" name="attr_skillclass"value='1' min='1' max='4'/> 
+      <input type="number" name="attr_skillrank" value='1' min='1' max='5'/>
+      <input type="number" name="attr_skillcost" value='1' min='1'/> 
+</fieldset>
+<h4>Soldier Skills</h4>
+<fieldset class="repeating_skills-soldier">            
+     <select name="attr_Skill-soldier" class="sheet-skills">
+        <option value="WP-Pistol">Weapon Proficiency - Pistol (C2)</option>
+        <option value="WP-Rifle">Weapon Proficiency - Rifle (C3)</option>
+        <option value="WP-Heavy">Weapon Proficiency - Heavy Weapons (Ballista, Cannons, Ribaults) (C3)</option>
+        <option value="WP-Indirect">Weapon Proficiency - Indirect (Trebuchet, Grenade Launcher, Mortar, Artillery) (C3)</option>
+        <option value="WP-Unarmed">Weapon Proficiency - Unarmed (C1)</option>
+        <option value="WP-Great">Weapon Proficiency - Great Weapons (C3)</option>
+        <option value="WP-Polearms">Weapon Proficiency - Polearms (C3)</option>
+        <option value="WP-Blades">Weapon Proficiency - Blades (C2)</option>
+        <option value="WP-Blunt">Weapon Proficiency - Blunt (C2)</option>
+        <option value="WP-Thrown">Weapon Proficiency - Thrown (C2)</option>
+        <option value="WP-Projectile">Weapon Proficiency - Primitive Projectile (Bows, Crossbows, Slingshots) (C2)</option>
+        <option value="Parry">Parry (C2)</option>
+      </select>
+      <input type="number" name="attr_skillclass"value='1' min='1' max='4'/> 
+      <input type="number" name="attr_skillrank" value='1' min='1' max='5'/>
+      <input type="number" name="attr_skillcost" value='1' min='1'/> 
+</fieldset>
+<h4>Survival Skills</h4>
+<fieldset class="repeating_skills-survival">            
+     <select name="attr_Skill-survival" class="sheet-skills">
+        <option value="Trap-Making">Trap Making (C2)</option>
+        <option value="Navigation">Navigation (C1)</option>
+        <option value="Tracking">Tracking (C2)</option>
+        <option value="Hunting">Hunting (C3)</option>
+        <option value="Conditioning">Conditioning (C1)</option>
+      </select>
+      <input type="number" name="attr_skillclass"value='1' min='1' max='4'/> 
+      <input type="number" name="attr_skillrank" value='1' min='1' max='5'/>
+      <input type="number" name="attr_skillcost" value='1' min='1'/> 
+</fieldset>
+<h4>Thief Skills</h4>
+<fieldset class="repeating_skills-thief">            
+     <select name="attr_Skill-thief" class="sheet-skills">
+        <option value="Stealth">Stealth: Add +5 per level to hit and +2 to damage when hidden for every rank in stealth.(C3)</option>
+        <option value="Bypass">Bypass Mechanical Security (C2)</option>
+        <option value="Sleight">Sleight of Hand (C2)</option>
+      </select>
+      <input type="number" name="attr_skillclass"value='1' min='1' max='4'/> 
+      <input type="number" name="attr_skillrank" value='1' min='1' max='5'/>
+      <input type="number" name="attr_skillcost" value='1' min='1'/> 
+</fieldset>
+<h4>Mage Skills</h4>
+<fieldset class="repeating_skills-mage">            
+     <select name="attr_Skill-mage" class="sheet-skills">
+        <option value="Arcana">Arcana (C3)</option>
+        <option value="Arcana-Reservoir">Arcane Reservoir (C2)</option>
+      </select>
+      <input type="number" name="attr_skillclass"value='1' min='1' max='4'/> 
+      <input type="number" name="attr_skillrank" value='1' min='1' max='5'/>
+      <input type="number" name="attr_skillcost" value='1' min='1'/> 
+</fieldset>
+<hr />
+<h1>Stunts</h1>
+<textarea type='text' name='attr_StuntsNotes'/> TEMPORARY - Put your stunts in here for now</textarea>
+<hr />
+<h1>Equipment</h1>
+<textarea type='text' name='attr_InventoryNotes'/> TEMPORARY - Put your Equipment/Inventory in here for now</textarea>
